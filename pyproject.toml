@@ -1,0 +1,33 @@
+[tool.black]
+line-length = 80
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 80
+extend_skip = "manage.py"
+known_first_party = "todo"
+known_django = "django"
+# sections isort should display imports for and in what order
+sections = [
+  "FUTURE",
+  "STDLIB",
+  "DJANGO",
+  "THIRDPARTY",
+  "FIRSTPARTY",
+  "LOCALFOLDER",
+]
+
