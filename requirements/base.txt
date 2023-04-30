@@ -13,5 +13,5 @@ mysqlclient==1.4.6
 # Django REST Framework
 # ------------------------------------------------------------------------------
 djangorestframework==3.11.0  # https://github.com/encode/django-rest-framework
-PyYAML==5.2  # https://github.com/yaml/pyyaml
+PyYAML==6.0  # https://github.com/yaml/pyyaml
 PyJWT==2.6.0
